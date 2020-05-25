@@ -48,4 +48,9 @@
   mergeoptions = --no-edit
 [user]
 	email = oliver.hyperion@gmx.fr
-	name = Olivier Tengherian
+	name = olivier Tengherian
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
